@@ -87,6 +87,7 @@ main.container {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
+    margin-left: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--color-goldenrod);
     display: inline-block;
@@ -284,7 +285,7 @@ main.container {
 
 @media (max-width: 480px) {
     .navigation {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 
