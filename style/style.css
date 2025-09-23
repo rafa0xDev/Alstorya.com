@@ -250,9 +250,10 @@ main.container {
 }
 
 /* ===== MOBILE RESPONSIVE ===== */
+/* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
     .container {
-        padding: 0 1rem;
+        padding: 0 1.2rem; /* lebih lega kiri-kanan */
     }
 
     nav ul {
@@ -266,73 +267,106 @@ main.container {
     }
 
     .Headline-tag {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+        line-height: 1.5; /* biar tidak terlalu rapat */
     }
 
     .headline-container iframe {
-        height: 200px;
+        height: 220px;
+        margin-bottom: 1.5rem;
     }
 
-    /* ✅ Perbaikan Spasi Mobile — Lead, Bridge, Body */
+    /* ✅ LEAD — Lebih besar, lebih lega */
     .lead {
-        font-size: 1.1rem;
-        padding: 1.2rem 1rem; /* lebih lega kiri-kanan */
-        margin: 2rem 0 2.5rem 0; /* tambah margin bawah */
+        font-size: 1.15rem;
+        line-height: 1.7;
+        padding: 1.5rem 1.2rem;
+        margin: 2.5rem 0 3rem 0;
+        border-radius: 8px 8px 8px 8px;
     }
 
+    /* ✅ BRIDGE — Jadi jembatan visual yang jelas */
     .bridge {
-        font-size: 1rem;
-        padding: 1rem;
-        margin: 2rem 0; /* tambah jarak atas-bawah */
-        line-height: 1.6;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        padding: 1.2rem 1rem;
+        margin: 2.5rem 0;
+        background-color: rgba(218, 165, 32, 0.15);
+        border-radius: 8px;
+        border-left: 3px solid var(--color-goldenrod);
     }
 
+    /* ✅ BODY — Spasi besar antar paragraf, font enak dibaca */
     .body p {
-        font-size: 1rem;
-        line-height: 1.8;
-        margin-bottom: 1.8rem; /* perbesar jarak antar paragraf */
-        padding: 0 0.5rem; /* beri napas kiri-kanan */
+        font-size: 1.05rem;
+        line-height: 1.8; /* sangat penting untuk kenyamanan baca */
+        margin-bottom: 2.2rem; /* jarak antar paragraf diperbesar */
+        padding: 0 0.8rem; /* napas kiri-kanan */
+        text-align: justify;
     }
 
+    /* ✅ LEG — Jarak dari body diperbesar */
     .leg {
-        padding: 1rem;
-        margin-top: 2.5rem; /* beri jarak lebih dari body terakhir */
+        padding: 1.2rem 1rem;
+        margin-top: 3.5rem;
+        font-size: 0.95rem;
+        border-top: 2px solid var(--color-silver);
     }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 1rem; /* minimal tapi tetap lega */
+    }
+
+    .Headline-tag {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
+    .headline-container iframe {
+        height: 180px;
+    }
+
     .navigation {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 0.5rem;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.8rem;
     }
 
     .nav-button {
-        margin-top: 0.5rem;
+        justify-content: flex-start;
+        margin-top: 0;
     }
 
     .footer-links a {
         display: block;
-        margin: 0.5rem 0;
+        margin: 0.6rem 0;
     }
 
-    /* ✅ Tambahan Spasi Ekstra untuk Layar Sangat Kecil */
+    /* ✅ EXTRA MOBILE SPACING — Untuk layar sangat kecil */
     .lead {
-        margin: 2rem 0 3rem 0;
-        padding: 1.5rem 1rem;
+        font-size: 1.1rem;
+        padding: 1.6rem 1rem;
+        margin: 2.5rem 0 3.5rem 0;
     }
 
     .bridge {
-        margin: 2.5rem 0;
-        padding: 1.2rem;
+        font-size: 1rem;
+        padding: 1.3rem 0.8rem;
+        margin: 3rem 0;
     }
 
     .body p {
-        margin-bottom: 2rem;
         font-size: 1rem;
+        line-height: 1.9; /* diperlebar lagi! */
+        margin-bottom: 2.5rem; /* jarak antar paragraf MAX */
+        padding: 0 0.5rem;
     }
 
     .leg {
-        margin-top: 3rem;
+        margin-top: 4rem; /* jarak besar dari paragraf terakhir */
+        padding: 1.3rem 0.8rem;
+        font-size: 0.9rem;
     }
 }
