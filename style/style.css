@@ -83,6 +83,7 @@ main.container {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
+    margin-left: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid var(--color-goldenrod);
     display: inline-block;
