@@ -273,13 +273,30 @@ main.container {
         height: 200px;
     }
 
+    /* ✅ Perbaikan Spasi Mobile — Lead, Bridge, Body */
     .lead {
         font-size: 1.1rem;
+        padding: 1.2rem 1rem; /* lebih lega kiri-kanan */
+        margin: 2rem 0 2.5rem 0; /* tambah margin bawah */
+    }
+
+    .bridge {
+        font-size: 1rem;
         padding: 1rem;
+        margin: 2rem 0; /* tambah jarak atas-bawah */
+        line-height: 1.6;
     }
 
     .body p {
         font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 1.8rem; /* perbesar jarak antar paragraf */
+        padding: 0 0.5rem; /* beri napas kiri-kanan */
+    }
+
+    .leg {
+        padding: 1rem;
+        margin-top: 2.5rem; /* beri jarak lebih dari body terakhir */
     }
 }
 
@@ -287,6 +304,7 @@ main.container {
     .navigation {
         flex-direction: row;
         align-items: flex-start;
+        gap: 0.5rem;
     }
 
     .nav-button {
@@ -296,5 +314,25 @@ main.container {
     .footer-links a {
         display: block;
         margin: 0.5rem 0;
+    }
+
+    /* ✅ Tambahan Spasi Ekstra untuk Layar Sangat Kecil */
+    .lead {
+        margin: 2rem 0 3rem 0;
+        padding: 1.5rem 1rem;
+    }
+
+    .bridge {
+        margin: 2.5rem 0;
+        padding: 1.2rem;
+    }
+
+    .body p {
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+
+    .leg {
+        margin-top: 3rem;
     }
 }
