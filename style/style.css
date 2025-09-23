@@ -196,7 +196,7 @@ main.container {
 .bridge {
     font-style: italic;
     color: #555;
-    text-align: center;
+    text-align: start;
     margin: 1.5rem 0;
     font-size: 1.1rem;
     padding: 0.5rem 1rem;
