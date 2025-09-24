@@ -228,44 +228,40 @@ main.container {
     color: #333;
 }
 
-/* ===== RESPONSIVE & ROTATED IMAGES ===== */
+/* ===== RESPONSIVE IMAGES — FULLY OPTIMIZED ===== */
 .body .featured-image {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    margin: 2rem auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: block;
     max-width: 800px;
-    object-fit: cover;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Khusus gambar matriks: rotasi ke horizontal (90°) */
-img[src$="matrix-juned.jpg"] {
-    transform: rotate(90deg);
+/* ROTATE ONLY THE MATRIX IMAGE TO HORIZONTAL */
+img[src$="matrix-turu-juned.jpg"] {
     transform-origin: center;
-    /* Atur ulang ukuran agar tidak overflow setelah rotasi */
     width: auto;
-    height: 100%;
-    max-height: 500px;
+    height: auto;
     max-width: none;
-    margin: 2rem auto;
+    max-height: 500px;
+    margin: 2.5rem auto;
     display: block;
 }
 
-/* Untuk mobile: pastikan gambar tetap muat */
+/* MOBILE ADJUSTMENTS FOR ROTATED IMAGE */
 @media (max-width: 768px) {
-    img[src$="matrix-juned.jpg"] {
-        transform: rotate(90deg);
+    img[src$="matrix-turu-juned.jpg"] {
         max-height: 350px;
-        width: auto;
-        height: auto;
+        margin: 2rem auto;
     }
 }
 
 @media (max-width: 480px) {
-    img[src$="matrix-juned.jpg"] {
-        max-height: 280px;
+    img[src$="matrix-turu-juned.jpg"] {
+        max-height: 260px;
+        margin: 1.8rem auto;
     }
 }
 
